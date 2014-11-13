@@ -1,0 +1,6 @@
+Test code to investigate why the lua-mosquitto project leaks memory, but uloop (another c bindings library) doesn't
+
+Each sample file has a comment header indicating it's valgrind results
+
+# eg
+valgrind -v --leak-check=full lua open-close-only-mosq.lua
